@@ -1,0 +1,16 @@
+<ul>
+  <li class="link" ng-repeat="item in $ctrl.items" 
+  	  ui-sref="itemDetail({short_name:item.short_name})">
+    {{ item.name}} ({{item.short_name}})
+  </li>
+</ul>
+
+
+<style type="text/css">
+	.link{
+		cursor: pointer;
+	}
+	.link:hover{
+		color:blue;
+	}
+</style>
